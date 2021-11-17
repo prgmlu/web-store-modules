@@ -1,0 +1,55 @@
+{
+  "name": "web-store-modules",
+  "version": "1.27.4",
+  "main": "index.js",
+  "repository": "git@gitlab.com:ObsessVR/360Experiences/web-store-modules.git",
+  "license": "MIT",
+  "scripts": {
+    "test": "for dir in packages/*; do (test -d \"$dir\" || continue) && (npm test --prefix $dir); done; ",
+    "lint": "eslint --ext .js,.jsx .",
+    "generate-new-module": "npm --prefix generator-web-store-module install && npx yo ./generator-web-store-module/generators/app/index.js && lerna bootstrap --hoist",
+    "install-peer-dependencies": "npm install --no-save three react react-dom react-router-dom",
+    "all-docs": "lerna run doc",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "bin": {
+    "wsm": "./package-helper.js"
+  },
+  "files": [
+    "packages",
+    "lerna.json",
+    "package-helper.js"
+  ],
+  "dependencies": {
+    "@google/model-viewer": "1.7.2",
+    "commander": "^2.19.0",
+    "detect-browser": "^5.1.1",
+    "lerna": "3.20.2",
+    "lodash": "^4.17.19"
+  },
+  "peerDependencies": {
+    "three": "^0.117.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "prop-types": "^15.7.2",
+    "shopify-buy": "^2.9.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "@storybook/addon-actions": "^5.2.5",
+    "@storybook/addon-knobs": "^5.2.5",
+    "@storybook/addon-links": "^5.2.5",
+    "@storybook/addons": "^5.2.5",
+    "@storybook/react": "^5.2.5"
+  },
+  "devDependencies": {
+    "yo": "^3.1.1",
+    "@babel/core": "^7.9.0",
+    "babel-loader": "^8.1.0"
+  }
+}

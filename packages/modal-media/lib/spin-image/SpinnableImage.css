@@ -1,0 +1,48 @@
+@media only screen and (min-width: 415px) {
+    .spinnableImage {
+        /*width: 15em;*/
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .spinnableImage {
+        /*max-height: 10em;*/
+    }
+}
+
+.spinContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.spinnableImage {
+    /*width: calc(100% - 10px);*/
+    z-index: 0;
+}
+
+.dragToSpinImage {
+    position: absolute;
+    width: 10em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dragToSpinIcon {
+    position: absolute;
+    width: 4em;
+    top: 9.5%;
+    right: 4.5%;
+    z-index: 1;
+}
+
+.fadeInOut {
+    opacity: 1;
+    animation: fade 2s linear infinite;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}

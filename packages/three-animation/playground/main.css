@@ -1,0 +1,21 @@
+body {
+    touch-action: none;
+    /* position: fixed; */
+    /* Prevent elastic scrolling */
+    overflow: hidden;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#app {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    position: absolute;
+    z-index: 1;
+}

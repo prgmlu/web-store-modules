@@ -1,0 +1,61 @@
+.position-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 201;
+    transform: translate(-50%, -50%);
+    pointer-events: none;  /* Prevent position wrapper from meddling with overlay onclick */
+    -webkit-font-smoothing: antialiased !important;  /* Prevent transform induced text aliasing - https://stackoverflow.com/questions/11589985/webkit-text-aliasing-gets-weird-during-css3-animations */
+}
+
+.obsess-modal-wrapper {
+    pointer-events: auto;
+	z-index: 205;
+    position: relative;
+    overflow-wrap: break-word;
+    display: block;
+    min-width: 5em;
+    min-height: 5em;
+    cursor: default;
+}
+
+/* A base opacity & transform css setting so that the modal starts off with these values before first transition. Without
+ this, the video modal would start at the middle without any transition */
+.flyup-base {
+    transform: translate3d(0, 10%, 0);
+    opacity: 0;
+}
+
+.flyup-appear, .flyup-exit-active {
+    transform: translate3d(0, 10%, 0);
+}
+
+.flyup-appear-active {
+    transform: translate3d(0, 0, 0);
+}
+
+.flyup-appear-done {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+.blur-appear, .blur-exit-active, .flyup-appear, .flyup-exit-active {
+    opacity: 0;
+}
+
+.blur-appear-active, .flyup-appear-active, .blur-appear-done {
+    opacity: 1;
+}
+
+.modalContent {
+    height: 100%;
+    width: 100%;
+}
+
+.overlay-darken-appear, .overlay-darken-exit-active {
+    background-color: rgba(0,0,0,0);
+}
+
+.overlay-darken-appear-active, .overlay-darken-appear-done {
+    background-color: rgba(0,0,0,0.6);
+}

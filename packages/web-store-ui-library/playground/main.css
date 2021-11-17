@@ -1,0 +1,33 @@
+
+body {
+    touch-action: none;
+    /* Need this to prevent elastic scrolling */
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #AFF5FF, #069AD0);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.menuGrid {
+    background-color:#FFFFFFA4;
+    position: absolute;
+    right: 0;
+    bottom: 0; 
+}
+
+@media only screen and (min-width: 415px) {
+    .menuGrid {
+        width: 24em;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .menuGrid {
+        width: 100%;
+    }
+}

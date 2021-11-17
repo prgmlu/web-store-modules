@@ -1,0 +1,23 @@
+{
+  "name": "three-physics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "package.json",
+    "lib",
+    "index.js"
+  ],
+  "scripts": {
+    "doc": "mkdir -p docs && documentation build lib/* -f md > docs/Documentation.md"
+  },
+  "peerDependencies": {
+    "three": "^0.97.0"
+  },
+  "description": ""
+}

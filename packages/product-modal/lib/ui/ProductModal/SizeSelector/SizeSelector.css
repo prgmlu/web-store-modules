@@ -1,0 +1,38 @@
+#size-selector-column {
+    width: 70%;
+    margin: 0.3em auto 0;
+    position: relative;
+}
+
+#size-selector-items {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+}
+
+.size-selector-item {
+    margin-top: 1px;  /* Make borders align with each other on top/bottom */
+    outline: 1px solid #D8D8D8;
+    width: 100%;
+    position: relative;
+    padding: 0.2em 0;
+}
+
+@media screen and (min-width: 415px) {
+    #size-selector-column {
+        width: 35%;
+        margin: 0.3em auto 1em;
+    }
+}
+
+.size-selector-item p {
+    display: inline;
+    margin: 0 auto;
+}
+
+.size-selector-item span {
+    position: absolute;
+    right: 4px;
+}

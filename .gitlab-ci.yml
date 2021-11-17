@@ -1,0 +1,37 @@
+image: docker:latest
+
+variables:
+  DOCKER_DRIVER: overlay
+  TEST_IMAGE: $CI_REGISTRY_IMAGE/test:$CI_COMMIT_REF_NAME
+
+services:
+  - docker:dind
+
+stages:
+  - build
+  - test
+
+before_script:
+  - echo "$CI_JOB_TOKEN $CI_REGISTRY"
+  - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+
+build:test_service:
+  stage: build
+  script:
+    # build the test image
+    - docker build -f Dockerfile -t $TEST_IMAGE .
+    - docker push $TEST_IMAGE
+  only:
+    - master
+
+test:app_service_beta:
+  stage: test
+  script:
+  - >
+    docker run $TEST_IMAGE
+    /bin/bash -c
+    "
+    echo tests go here
+    "
+  only:
+    - master

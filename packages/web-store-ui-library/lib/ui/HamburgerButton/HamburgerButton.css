@@ -1,0 +1,27 @@
+.hamburgerButtonContainer {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hamburgerButtonbar1, .hamburgerButtonbar2, .hamburgerButtonbar3 {
+    width: 27px;
+    height: 1px;
+    margin: 10px 0;
+    transition: 0.4s;
+}
+
+.hamburgerButtonbar1 {
+    margin-top: 0;
+}
+
+.hamburgerButtonCross .hamburgerButtonbar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 7px);
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.hamburgerButtonCross .hamburgerButtonbar2 {opacity: 0;}
+
+.hamburgerButtonCross .hamburgerButtonbar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -9px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}

@@ -1,0 +1,53 @@
+body {
+    touch-action: none;
+    /* position: fixed; */
+    /* Prevent elastic scrolling */
+    overflow: hidden;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#app {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    position: absolute;
+    z-index: 1;
+}
+
+.shopify-checkout-wrapper {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.checkout-item {
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    color: white;
+    background: black;
+    opacity: 0.50;
+    width: 300px;
+    color: green;
+}
+
+.example-item {
+    overflow-wrap: break-word;
+    color: yellow;
+}
+
+.green {
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}

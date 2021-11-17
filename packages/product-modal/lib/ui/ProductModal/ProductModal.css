@@ -1,0 +1,56 @@
+.obsess-modal-wrapper #product-modal-container {
+    text-align: center;
+    line-height: 1.4em;
+    padding: 1em;
+    overflow-y: hidden;
+}
+
+.obsess-modal-wrapper #product-modal-cart-overlay {
+    position: absolute;
+    z-index: 100;
+}
+
+.obsess-modal-wrapper #productModalHeaderWrapper,
+.obsess-modal-wrapper #productModalBrand,
+.obsess-modal-wrapper #productModalTitle,
+.obsess-modal-wrapper #productModalDescription,
+.obsess-modal-wrapper #productModalColor,
+.obsess-modal-wrapper #productModalPrice {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.obsess-modal-wrapper #product-modal-loading {
+    height: 30em;
+    width: 100%;
+}
+
+.obsess-modal-wrapper #product-modal-content {
+    max-width: inherit;
+    height: 80%;
+    transition: transform 500ms;
+}
+
+.obsess-modal-wrapper #product-modal-transition-wrapper {
+    height: inherit;
+    transition: opacity 100ms;
+}
+
+.obsess-modal-wrapper #productModalBodyWrapper {
+    min-width: 0;
+    min-height: 0;
+    position: relative;
+}
+
+.obsess-modal-wrapper #pinch-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
+}
+
+/*@media only screen and (max-width: 415px) {*/
+    /*.obsess-modal-wrapper #productModalContainer {*/
+        /*width: 80vw;*/
+    /*}*/
+/*}*/

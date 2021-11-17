@@ -1,0 +1,29 @@
+{
+  "name": "url-constructor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "package.json",
+    "lib",
+    "index.js"
+  ],
+  "scripts": {
+    "doc": "mkdir -p docs && documentation build lib/* -f md > docs/Documentation.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/runtime": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "regenerator-runtime": "^0.13.1"
+  }
+}

@@ -1,0 +1,7 @@
+.obsessModalWrapper #save-button {
+    position: absolute;
+    bottom: 12%;
+    right: 5%;
+    max-height: 5em;
+    width: auto;
+}

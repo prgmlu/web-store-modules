@@ -1,0 +1,25 @@
+{
+  "name": "obsess-device-detector",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "package.json",
+    "lib",
+    "index.js"
+  ],
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.js --mode development",
+    "build-dev": "webpack -p --config ./webpack.js --progress --display-error-details --mode development",
+    "doc": "mkdir -p docs && documentation build lib/* -f md > docs/Documentation.md"
+  },
+  "description": "",
+  "peerDependencies": {
+    "detect-browser": "^5.1.1"
+  }
+}

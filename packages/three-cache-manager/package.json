@@ -1,0 +1,23 @@
+{
+  "name": "three-cache-manager",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "package.json",
+    "lib",
+    "index.js"
+  ],
+  "scripts": {
+    "doc": "mkdir -p docs && documentation build lib/* -f md > docs/Documentation.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "three": "^0.97.0"
+  },
+  "description": ""
+}

@@ -1,0 +1,18 @@
+.zoomedImageContainer {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.zoomedImageContainer img {
+  pointer-events: none;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.zoomedImageWrapper {
+  height: auto;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}

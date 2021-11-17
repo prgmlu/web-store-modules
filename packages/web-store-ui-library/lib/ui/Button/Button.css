@@ -1,0 +1,13 @@
+.obsess-basic-button {
+    font-size: 1.2em;
+    color: white;
+    background-color: black;
+    border: none;
+    text-decoration: none;
+    display: inline-block;    
+}
+
+.obsess-basic-button p {
+    font-size: 15px;
+    color: white;
+}
